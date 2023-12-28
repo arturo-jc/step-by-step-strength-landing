@@ -1,0 +1,110 @@
+.header{
+    height: 80vh;
+    background-image: url("../images/hero-md.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+    @media only screen and (max-width: $bp-lg) {
+        height: 60vh;
+    }
+
+    @media only screen and (max-width: $bp-xsm) {
+        height: 40vh;
+    }
+
+    &__text-positioner{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 60rem;
+
+        @media only screen and (max-width: $bp-lg) {
+            width: 100%;
+        }
+
+        @media only screen and (max-width: $bp-xsm) {
+            width: 100%;
+        }
+
+    }
+
+    &__text-container{
+        padding: 2rem 7%;
+        // max-width: 160rem;
+    }
+
+    &__background{
+        background-color: rgba(0,0,0, .6);
+        width: 100%;
+        height: 100%;
+    }
+
+    &__heading-main {
+        font-family: 'Raleway', sans-serif;
+        font-size: 3.5rem;
+        line-height: 1.1;
+        color: #fff;
+        margin-bottom: 1.5rem;
+
+        @media only screen and (max-width: $bp-lg) {
+            font-size: 3rem;
+        }
+
+        @media only screen and (max-width: $bp-xsm) {
+            font-size: 1.5rem;
+        }
+    }
+
+}
+
+.cta-button {
+    font-family: 'Roboto', sans-serif;
+    background: #0097a7;
+    color: #ffffff;
+    border: 0 none;
+    font-weight: 500;
+    min-width: 4rem;
+    box-sizing: border-box;
+    margin: 0;
+    display: inline-flex;
+    align-items: center;
+    vertical-align: bottom;
+    text-align: center;
+
+    font-size: 1.25rem;
+    padding: 0.8925rem 1.25rem;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.2s, border-color 0.2s, color 0.2s, box-shadow 0.2s, background-size 0.2s cubic-bezier(0.64, 0.09, 0.08, 1);
+    margin-bottom: 1rem;
+
+    @media only screen and (max-width: $bp-lg) {
+        font-size: 1rem;
+        padding: 0.714rem 1rem;
+    }
+
+    @media only screen and (max-width: $bp-xsm) {
+        font-size: 0.875rem;
+        padding: 0.62475rem 0.875rem;
+    }
+}
+
+.cta-button:hover {
+    background-color: rgba(0, 151, 167, 0.92);
+}
+
+.cta-details {
+    color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+
+    @media only screen and (max-width: $bp-xsm) {
+        font-size: 0.7rem;
+    }
+
+}
+
+body {
+    background-color: #fafafa;
+}

@@ -1,8 +1,8 @@
 .overview {
-  // background: #070a0c;
   background: linear-gradient(90deg, rgba(24,29,30,1) 0%, rgba(7,10,12,1) 35%);
   display: flex;
   color: #bebebe;
+  line-height: 0;
 
   @media only screen and (max-width: $bp-sm) {
     flex-direction: column;

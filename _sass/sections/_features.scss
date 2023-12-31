@@ -1,9 +1,60 @@
+.features {
+  color: #f0f0f0;
+  background-color: #1a1e20;
+}
+
 .feature-card-container {
   height: 100%;
   padding: 1rem;
-}
-
-.feature-card {
   display: flex;
   flex-direction: column;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 300;
+  line-height: 1.5;
+
+  @media only screen and (max-width: $bp-lg) {
+    font-size: 1rem;
+  }
+
+  @media only screen and (max-width: $bp-sm) {
+    width: 75%;
+    margin: auto;
+  }
+
+  @media only screen and (max-width: $bp-xsm) {
+    width: 100%;
+  }
+
+  .title {
+    align-self: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #00e7ff;
+
+    @media only screen and (max-width: $bp-lg) {
+      font-size: 1.25rem;
+    }
+  }
+
+  .icon-container {
+    align-self: center;
+    margin-bottom: 1rem;
+    background: linear-gradient(90deg, rgba(163,231,101,1) 19%, rgba(101,220,231,1) 44%, rgba(58,167,177,1) 89%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  .material-symbols-outlined {
+    font-size: 2.5rem;
+
+    @media only screen and (max-width: $bp-lg) {
+      font-size: 2.25rem;
+    }
+  }
+
+
 }
+
